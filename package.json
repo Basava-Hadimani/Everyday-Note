@@ -1,0 +1,50 @@
+{
+  "name": "everydaynote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engine": {
+    "node": "8.1.1",
+    "npm": "5.0.3"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "client": "npm start --prefix client",
+    "server": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run client\" \" npm run server\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "cookie-session": "^2.0.0-beta.3",
+    "create-react-app": "^2.1.1",
+    "css-loader": "^2.1.0",
+    "express": "~4.16.4",
+    "http-proxy-middleware": "^0.19.0",
+    "install": "^0.12.2",
+    "localtunnel": "^1.9.1",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.3.12",
+    "nodemon": "^1.18.6",
+    "npm": "^6.5.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^1.0.0",
+    "passport-google-oauth20": "^1.0.0",
+    "path-parser": "^4.2.0",
+    "react-form-with-constraints": "^0.10.0",
+    "react-form-with-constraints-bootstrap4": "^0.10.0",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-sticky-footer": "0.1.0-rc3",
+    "react-textarea-autosize": "^7.1.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "sendgrid": "^5.2.3",
+    "stripe": "^6.15.0"
+  }
+}
