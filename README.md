@@ -8,7 +8,7 @@ Step 1: Run below command to clone repo
 
 git clone https://github.com/Basava-Hadimani/Everyday-Note.git
 
-cd Feedback_Sender
+cd Everyday-Note
 
 Step 2: Download all the node modules
 
